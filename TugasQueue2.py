@@ -14,10 +14,10 @@ class TaskManager:
             return "Tidak ada tugas dalam antrian!"
 
     def add_urgent_task(self, task):
-        self.tasks.appendleft(task) # Konversi deque ke list untuk tampilan yang lebih jelas
-
+        self.tasks.appendleft(task) 
+        
     def display_tasks(self):
-        print(list(self.tasks))
+        print(list(self.tasks)) # Konversi deque ke list untuk tampilan yang lebih jelas
 
     def is_empty(self):
         return len(self.tasks) == 0
